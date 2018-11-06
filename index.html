@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(e){
+        console.log(e);
+    }
+    xhr.open('get','./data.json');
+    xhr.send();
+    </script>
 </head>
 <body>
     <div>待定......</div>
